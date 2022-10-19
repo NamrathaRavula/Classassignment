@@ -14,6 +14,7 @@ print(new_a)
 
 #Question 2
 import pandas as pd
+import matplotlib.pyplot as plt
 data = pd.read_csv("C:/Users/sruja/OneDrive/Desktop/python-codes/data.csv")
 data.head()
 data.describe()
@@ -27,7 +28,8 @@ del data["Maxpulse"]
 print(data.head)
 data['Calories'] = data['Calories'].astype("int")
 print(data['Calories'].dtypes)
-data.plot.scatter(x ='Duration', y= 'Calories')
+print(data.plot.scatter(x ='Duration', y= 'Calories'))
+plt.show()
 
 
 #Question 3
