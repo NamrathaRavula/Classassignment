@@ -1,4 +1,6 @@
 # Classassignment
-Pandas
-Numpy
-matplotlib
+pip install numpy
+
+pip install pandas
+
+pip install matplotlib
